@@ -1,4 +1,6 @@
 import React from "react";
+import UserPreferredAddressList from "./UserPreferredAddressList";
+import CustomErrorBoundary from "./CustomErrorBoundary";
 
 class AddressComponent extends React.Component {
   constructor(props) {
@@ -23,6 +25,9 @@ class AddressComponent extends React.Component {
             ></textarea>
           </label>
         </p>
+        <CustomErrorBoundary>
+          <UserPreferredAddressList></UserPreferredAddressList>
+        </CustomErrorBoundary>
       </div>
     );
   }
