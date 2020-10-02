@@ -11,11 +11,12 @@ import FormExApp from "./FormEx/FormExApp";
 import FormikExApp from "./FormikEx/FormikExApp";
 import FormikExAppYup from "./FormikEx/FormikExAppYup";
 import FormikExAppYupForm from "./FormikEx/FormikExAppYupForm";
+import OrderComponent from "./LiftingStateUpEx/OrderComponent";
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormikExAppYupForm />
+    <OrderComponent />
   </React.StrictMode>,
   document.getElementById("root")
 );
