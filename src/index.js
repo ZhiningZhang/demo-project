@@ -8,12 +8,13 @@ import CountCharactersClass from "./components/CountCharactersClass";
 import APPContextEx from "./ContextEx/APPContextEx";
 import Employee from "./components/Employee";
 import FormExApp from "./FormEx/FormExApp";
-import EmployeeComponemt from "./FormikEx/EmployeeComponemt";
+import FormikExApp from "./FormikEx/FormikExApp";
+import FormikExAppYup from "./FormikEx/FormikExAppYup";
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <EmployeeComponemt />
+    <FormikExAppYup />
   </React.StrictMode>,
   document.getElementById("root")
 );
