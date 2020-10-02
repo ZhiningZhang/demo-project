@@ -23,6 +23,7 @@ class CountCharactersClass extends React.Component {
 
   //method
   render() {
+   
     return (
       <div>
         <h2>Class: Welcome to Count Characters Component...</h2>

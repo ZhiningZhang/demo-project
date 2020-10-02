@@ -1,0 +1,12 @@
+Context
+https://reactjs.org/docs/context.html
+
+must use contextType and {this.context}
+
+static contextType  = myContext;
+{this.context}
+
+
+
+Consuming Multiple Contexts
+https://reactjs.org/docs/context.html#consuming-multiple-contexts

@@ -5,13 +5,14 @@ import App from "./App";
 import DisplayEmployeeInfo from "./components/DisplayEmployeeInfo";
 import CountCharacters from "./components/CountCharacters";
 import CountCharactersClass from "./components/CountCharactersClass";
+import APPContextEx from "./ContextEx/APPContextEx";
 import Employee from "./components/Employee";
+import FormExApp from "./FormEx/FormExApp";
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Employee  Id="101" Name="Pragim" Location="Bangalore" Salary="50000" BasicSalary="25000" HRA="10000" SpecialAllowance="15000" />
-
+    <FormExApp />
   </React.StrictMode>,
   document.getElementById("root")
 );
