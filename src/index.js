@@ -8,11 +8,12 @@ import CountCharactersClass from "./components/CountCharactersClass";
 import APPContextEx from "./ContextEx/APPContextEx";
 import Employee from "./components/Employee";
 import FormExApp from "./FormEx/FormExApp";
+import EmployeeComponemt from "./FormikEx/EmployeeComponemt";
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormExApp />
+    <EmployeeComponemt />
   </React.StrictMode>,
   document.getElementById("root")
 );
