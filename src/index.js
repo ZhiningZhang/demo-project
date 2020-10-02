@@ -10,11 +10,12 @@ import Employee from "./components/Employee";
 import FormExApp from "./FormEx/FormExApp";
 import FormikExApp from "./FormikEx/FormikExApp";
 import FormikExAppYup from "./FormikEx/FormikExAppYup";
+import FormikExAppYupForm from "./FormikEx/FormikExAppYupForm";
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <FormikExAppYup />
+    <FormikExAppYupForm />
   </React.StrictMode>,
   document.getElementById("root")
 );

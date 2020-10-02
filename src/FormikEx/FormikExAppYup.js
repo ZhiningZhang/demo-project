@@ -13,7 +13,7 @@ In this video we will learn
 4. How to display the Validation Error Messages
 5. What is getFieldProps method in Formik */
 
-const FormikExApp = () => {
+const FormikExAppYup = () => {
   const formik = useFormik({
     initialValues: {
       Id: "102",
@@ -112,4 +112,4 @@ const FormikExApp = () => {
   );
 };
 
-export default FormikExApp;
+export default FormikExAppYup;
