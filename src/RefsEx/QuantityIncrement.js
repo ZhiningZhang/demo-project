@@ -1,18 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
+
 
 //Refs in React
 //https://www.youtube.com/watch?v=t4okzJc6_Ak&list=PL6n9fhu94yhVpO8VBlUXbxKUuG-n2b1bL&index=19
+
+//https://www.pragimtech.com/blog/reactjs/refs-in-react/
 
 class QuantityIncrement extends React.Component {
   constructor(props) {
     super(props);
 
-    this.quantityRef = React.createFactory();
+    this.quantityRef = React.createRef();
   }
 
   incrementQuantity = () => {
-    //this.quantityRef.current.value++;
+    this.quantityRef.current.value++;
   };
 
   render() {
