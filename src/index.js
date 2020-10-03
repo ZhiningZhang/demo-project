@@ -12,14 +12,12 @@ import FormikExApp from "./FormikEx/FormikExApp";
 import FormikExAppYup from "./FormikEx/FormikExAppYup";
 import FormikExAppYupForm from "./FormikEx/FormikExAppYupForm";
 import OrderComponent from "./LiftingStateUpEx/OrderComponent";
+
+import QuantityIncrement from "./RefsEx/QuantityIncrement";
+
 //import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <OrderComponent />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+ReactDOM.render(<QuantityIncrement />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
