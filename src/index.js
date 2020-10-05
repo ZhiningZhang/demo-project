@@ -18,10 +18,20 @@ import LogIn from "./RefsEx/LogIn";
 import VideoPlayer from "./RefsEx/VideoPlayer";
 import Elevator from "./RefsEx/Elevator";
 import TestComponent from "./RefsEx/TestComponent";
+import App2 from "./HigherOrderEx/App2";
+import App3 from "./HigherOrderEx/App3";
 
 //import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Elevator />, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <App2>
+      <br />
+    </App2>
+    <App3 />
+  </div>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
