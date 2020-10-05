@@ -17,6 +17,7 @@ import QuantityIncrement from "./RefsEx/QuantityIncrement";
 import LogIn from "./RefsEx/LogIn";
 import VideoPlayer from "./RefsEx/VideoPlayer";
 import Elevator from "./RefsEx/Elevator";
+import TestComponent from "./RefsEx/TestComponent";
 
 //import * as serviceWorker from './serviceWorker';
 

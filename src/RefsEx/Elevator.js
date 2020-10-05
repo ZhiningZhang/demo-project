@@ -1,5 +1,6 @@
 import React from "react";
 import Summary from "./Summary";
+import DemoComponent from "./DemoComponent";
 
 //Forwarding refs.
 
@@ -34,6 +35,7 @@ class Elevator extends React.Component {
         </p>
 
         <Summary innerRef={this.elevatorRef}></Summary>
+        <DemoComponent ref={this.elevatorRef} ></DemoComponent>
       </div>
     );
   }
