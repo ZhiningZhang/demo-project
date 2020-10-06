@@ -28,13 +28,15 @@ import EmployeePortal from "./PortalsEx/EmployeePortal";
 import Tooltip from "./Portals3Ex/Tooltip";
 import TippyApp from "./Portals3Ex/TippyApp";
 
+import ReportsDashboard from "./ProfilerEx/ReportsDashboard";
+
 
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <TippyApp/>
+    <ReportsDashboard/>
   </div>,
   document.getElementById("root")
 );
