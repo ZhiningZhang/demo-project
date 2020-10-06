@@ -21,14 +21,19 @@ import TestComponent from "./RefsEx/TestComponent";
 import App2 from "./HigherOrderEx/App2";
 import App3 from "./HigherOrderEx/App3";
 
+import AppPortal from "./AppPortal";
+
 import EmployeePortal from "./PortalsEx/EmployeePortal";
+
+import Tooltip from "./Portals3Ex/Tooltip";
+
+
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <EmployeePortal/>
-    <div id="root2">4444</div>
+    <Tooltip/>
   </div>,
   document.getElementById("root")
 );
