@@ -21,14 +21,14 @@ import TestComponent from "./RefsEx/TestComponent";
 import App2 from "./HigherOrderEx/App2";
 import App3 from "./HigherOrderEx/App3";
 
+import EmployeePortal from "./PortalsEx/EmployeePortal";
+
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <App2>
-      <br />
-    </App2>
-    <App3 />
+    <EmployeePortal/>
+    <div id="root2">4444</div>
   </div>,
   document.getElementById("root")
 );
