@@ -26,6 +26,7 @@ import AppPortal from "./AppPortal";
 import EmployeePortal from "./PortalsEx/EmployeePortal";
 
 import Tooltip from "./Portals3Ex/Tooltip";
+import TippyApp from "./Portals3Ex/TippyApp";
 
 
 
@@ -33,7 +34,7 @@ import Tooltip from "./Portals3Ex/Tooltip";
 
 ReactDOM.render(
   <div>
-    <Tooltip/>
+    <TippyApp/>
   </div>,
   document.getElementById("root")
 );
