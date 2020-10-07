@@ -40,13 +40,14 @@ import Employee2 from "./LifecycleEx/Employee";
 
 import NewEmployee from "./HookuseStateEx/NewEmployee";
 
+import EmployeeComponent from "./HookuseStateEx/EmployeeComponent";
 
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <NewEmployee/>
+    <EmployeeComponent/>
   </div>,
   document.getElementById("root")
 );
