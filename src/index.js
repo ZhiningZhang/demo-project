@@ -38,13 +38,15 @@ import Reports from "./PureComponentsEx/Reports";
 
 import Employee2 from "./LifecycleEx/Employee";
 
+import NewEmployee from "./HookuseStateEx/NewEmployee";
+
 
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <ChangeDetection/>
+    <NewEmployee/>
   </div>,
   document.getElementById("root")
 );
