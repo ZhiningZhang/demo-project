@@ -44,12 +44,14 @@ import EmployeeComponent from "./HookuseStateEx/EmployeeComponent";
 
 import Employee31 from "./HookUseEffect31Ex/Employee31";
 
+import App33 from "./UseContextEx/App33";
+
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <Employee31/>
+    <App33/>
   </div>,
   document.getElementById("root")
 );

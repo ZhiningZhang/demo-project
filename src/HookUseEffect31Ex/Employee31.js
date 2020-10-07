@@ -39,7 +39,6 @@ function Employee31() {
 
   function navigateToDepartment() {
     console.log("--navigateToDepartment");
-    //ReactDOM.render(<Departments31></Departments31>,document.getElementById("root"));
     ReactDOM.render(
       <Departments31></Departments31>,
       document.getElementById("root")
