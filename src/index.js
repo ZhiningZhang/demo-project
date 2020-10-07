@@ -30,13 +30,15 @@ import TippyApp from "./Portals3Ex/TippyApp";
 
 import ReportsDashboard from "./ProfilerEx/ReportsDashboard";
 
+import Page from "./RenderPropsEx/Page";
+
 
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <ReportsDashboard/>
+    <Page/>
   </div>,
   document.getElementById("root")
 );
