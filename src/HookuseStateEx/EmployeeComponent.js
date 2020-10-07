@@ -5,7 +5,8 @@ function EmployeeComponent() {
   const [searchText, setSearchText] = useState("");
   const [employeeCount, setEmployeeCount] = useState(0);
 
-  useEffect(() => {
+  useEffect(
+      () => {
     console.log("We are in useEffect function");
     fetch("https://localhost:44362/api/Employee/" + searchText)
       .then((res) => res.json())

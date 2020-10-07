@@ -42,12 +42,14 @@ import NewEmployee from "./HookuseStateEx/NewEmployee";
 
 import EmployeeComponent from "./HookuseStateEx/EmployeeComponent";
 
+import Employee31 from "./HookUseEffect31Ex/Employee31";
+
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <EmployeeComponent/>
+    <Employee31/>
   </div>,
   document.getElementById("root")
 );
