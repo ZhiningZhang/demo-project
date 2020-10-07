@@ -32,13 +32,19 @@ import ReportsDashboard from "./ProfilerEx/ReportsDashboard";
 
 import Page from "./RenderPropsEx/Page";
 
+import ChangeDetection from "./PureComponentsEx/ChangeDetection";
+
+import Reports from "./PureComponentsEx/Reports";
+
+import Employee2 from "./LifecycleEx/Employee";
+
 
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <Page/>
+    <ChangeDetection/>
   </div>,
   document.getElementById("root")
 );
