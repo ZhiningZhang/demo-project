@@ -54,11 +54,14 @@ import LayoutComponent from "./CustomHookEx/LayoutComponent";
 
 import MyComponent from "./CustomHookEx/MyComponent";
 
+//react-speech-kit, Hook
+import CustomHooks2App from "./CustomHooks2Ex/CustomHooks2App";
+
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <MyComponent/>
+    <CustomHooks2App/>
   </div>,
   document.getElementById("root")
 );
