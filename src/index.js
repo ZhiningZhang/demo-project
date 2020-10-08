@@ -50,12 +50,15 @@ import TestContext01App from "./TestContext01/TestContext01App";
 
 import LearnContext01App from "./LearnContext01/LearnContext01App";
 
+import LayoutComponent from "./CustomHookEx/LayoutComponent";
+
+import MyComponent from "./CustomHookEx/MyComponent";
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <LearnContext01App/>
+    <MyComponent/>
   </div>,
   document.getElementById("root")
 );
