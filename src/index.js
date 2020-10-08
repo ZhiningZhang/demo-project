@@ -46,12 +46,16 @@ import Employee31 from "./HookUseEffect31Ex/Employee31";
 
 import App33 from "./UseContextEx/App33";
 
+import TestContext01App from "./TestContext01/TestContext01App";
+
+import LearnContext01App from "./LearnContext01/LearnContext01App";
+
 
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <div>
-    <App33/>
+    <LearnContext01App/>
   </div>,
   document.getElementById("root")
 );

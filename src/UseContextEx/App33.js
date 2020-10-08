@@ -41,7 +41,11 @@ function Employee() {
   let context = useContext(employeeContext);
 
   function changeEmploymentType() {
-    context.updateEmployee({ ...context.data, EmployeeType: "Permanent" });
+    if (context.data.EmployeeType === "Contract") {
+      context.updateEmployee({ ...context.data, EmployeeType: "Permanent" });
+    } else {
+      context.updateEmployee({ ...context.data, EmployeeType: "Contract" });
+    }
   }
 
   return (
