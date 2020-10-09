@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+
 import "./index.css";
 import App from "./App";
 import DisplayEmployeeInfo from "./components/DisplayEmployeeInfo";
@@ -57,12 +59,16 @@ import MyComponent from "./CustomHookEx/MyComponent";
 //react-speech-kit, Hook
 import CustomHooks2App from "./CustomHooks2Ex/CustomHooks2App";
 
+import RoutingExApp from "./RoutingEx/RoutingExApp";
+
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <div>
-    <CustomHooks2App/>
-  </div>,
+
+    <div>
+      <RoutingExApp />
+    </div>
+,
   document.getElementById("root")
 );
 
