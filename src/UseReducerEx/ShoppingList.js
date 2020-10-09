@@ -2,6 +2,11 @@ import React, { useReducer, useRef } from "react";
 
 //https://www.youtube.com/watch?v=sYDFCuZHrqw
 
+//!!!!!
+//https://daveceddia.com/usereducer-hook-examples/
+
+//https://daveceddia.com/what-is-a-reducer/
+
 function ShoppingList() {
   const inputRef = useRef();
   const [items, dispatch] = useReducer((state, action) => {
@@ -14,6 +19,9 @@ function ShoppingList() {
             name: action.name,
           },
         ];
+      case "remove":
+        // keep every item except the one we want to remove
+        return state.filter((_, index) => index != action.index);
       default:
     }
   }, []);
@@ -40,8 +48,14 @@ function ShoppingList() {
       </form>
 
       <ul>
-        {items.map((item) => (
-          <li key={item.id}> {item.name}</li>
+        {items.map((item, index) => (
+          <li key={item.id}>
+            {" "}
+            {item.name}
+            <button onClick={() => dispatch({ type: "remove", index })}>
+              X
+            </button>
+          </li>
         ))}
       </ul>
     </>
