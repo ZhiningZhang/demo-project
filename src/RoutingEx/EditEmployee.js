@@ -1,71 +1,46 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import {
+  BrowserRouter,
+  Link,
+  NavLink,
+  Switch,
+  Route,
+  Redirect,
+  Prompt,
+} from "react-router-dom";
+
+import EmployeePersonalInfo from "./EmployeePersonalInfo";
+import EmployeeSalaryInfo from "./EmployeeSalaryInfo";
 
 function EditEmployee(props) {
-  const [employee, setEmployee] = useState(null);
-
-  useEffect(() => {
-    console.log("---- EditEmployee useEffect()");
-    fetch("https://localhost:44362/api/Employee/" + props.match.params.id)
-      .then((res) => res.json())
-      .then((result) => {
-        console.log("---result = ", result);
-        setEmployee(result);
-      });
-  },[props.match.params.id]);
-
-  function changeEmployeeData(e) {}
-
-  if (employee === null) return null;
-
   return (
     <div>
-      <h2>Employee Details...</h2>
-      <p>
-        <label>
-          Employee ID :{" "}
-          <input
-            type="text"
-            name="Id"
-            value={employee.Id}
-            onChange={changeEmployeeData}
-          ></input>
-        </label>
-      </p>
-      <p>
-        <label>
-          Employee Name :{" "}
-          <input
-            type="text"
-            name="Name"
-            value={employee.Name}
-            onChange={changeEmployeeData}
-          ></input>
-        </label>
-      </p>
-      <p>
-        <label>
-          Employee Location :{" "}
-          <input
-            type="text"
-            name="Location"
-            value={employee.Location}
-            onChange={changeEmployeeData}
-          ></input>
-        </label>
-      </p>
-      <p>
-        <label>
-          Employee Salary :{" "}
-          <input
-            type="text"
-            name="Salary"
-            value={employee.Salary}
-            onChange={changeEmployeeData}
-          ></input>
-        </label>
-      </p>
-      <button>Update</button>
+      <Link to={"/employee/" + props.match.params.id}>Personal</Link>{" "}
+      &nbsp;&nbsp;
+      <NavLink
+        to={"/employee/" + props.match.params.id + "/salary"}
+        activeClassName="testClass"
+      >
+        Salary
+      </NavLink>
+      &nbsp;&nbsp;
+      <NavLink
+        to={"/employee/" + props.match.params.id + "/projects"}
+        activeClassName="testClass"
+      >
+        Projects
+      </NavLink>
+      <Switch>
+        <Route
+          exact
+          path="/employee/:id"
+          component={EmployeePersonalInfo}
+        ></Route>
+        <Route
+          path={props.match.url + "/salary"}
+          component={EmployeeSalaryInfo}
+        ></Route>
+      </Switch>
     </div>
   );
 }

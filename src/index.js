@@ -61,12 +61,14 @@ import CustomHooks2App from "./CustomHooks2Ex/CustomHooks2App";
 
 import RoutingExApp from "./RoutingEx/RoutingExApp";
 
+import Routing2ExApp from "./Routing2Ex/Routing2ExApp";
+
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 
     <div>
-      <RoutingExApp />
+      <Routing2ExApp />
     </div>
 ,
   document.getElementById("root")
