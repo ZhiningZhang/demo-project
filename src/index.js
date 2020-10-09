@@ -65,12 +65,16 @@ import Routing2ExApp from "./Routing2Ex/Routing2ExApp";
 
 import ReduxEXApp from "./ReduxEx/ReduxEXApp";
 
+import Count from "./UseReducerEx/Count";
+
+import ShoppingList from "./UseReducerEx/ShoppingList";
+
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 
     <div>
-      <ReduxEXApp />
+      <ShoppingList />
     </div>
 ,
   document.getElementById("root")
