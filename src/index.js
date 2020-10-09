@@ -63,12 +63,14 @@ import RoutingExApp from "./RoutingEx/RoutingExApp";
 
 import Routing2ExApp from "./Routing2Ex/Routing2ExApp";
 
+import ReduxEXApp from "./ReduxEx/ReduxEXApp";
+
 //import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 
     <div>
-      <Routing2ExApp />
+      <ReduxEXApp />
     </div>
 ,
   document.getElementById("root")
